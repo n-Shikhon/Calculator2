@@ -4,15 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".weight">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Weight"
-        android:textSize="30dp">
 
-    </TextView>
+    <TextView
+        android:id="@+id/textViewW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weight Converter"
+        android:textSize="25dp"
+        android:textColor="#ffff"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/enterWt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Enter Weight"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_marginTop="25dp"
+        />
+    <Button
+        android:id="@+id/btnkTOg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kilogram to Gram"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/btngTOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gram to Kilogram"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/resultW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0 KG"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        />
 
 </LinearLayout>
