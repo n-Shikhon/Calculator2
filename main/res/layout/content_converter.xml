@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context=".converter"
+    android:background="@android:color/holo_blue_dark"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unit Converter"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:columnCount="2"
+        android:rowCount="1"
+        android:layout_weight="8"
+        android:padding="10dp"
+        android:layout_marginTop="30dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/currency"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            app:cardMaxElevation="10dp"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CURRENCY"
+                android:textSize="30dp"
+                android:layout_gravity="center"
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="bold">
+
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/length_c"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            app:cardMaxElevation="10dp"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LENGTH_C"
+                android:textSize="30dp"
+                android:layout_gravity="center"
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="bold">
+
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </GridLayout>
+
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:columnCount="2"
+        android:rowCount="1"
+        android:layout_weight="8"
+        android:padding="10dp"
+        android:layout_marginTop="30dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/length_f"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            app:cardMaxElevation="10dp"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LENGTH_F"
+                android:textSize="30dp"
+                android:layout_gravity="center"
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="bold">
+
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/weight"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            app:cardMaxElevation="10dp"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WEIGHT"
+                android:textSize="30dp"
+                android:layout_gravity="center"
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="bold">
+
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:columnCount="2"
+        android:rowCount="1"
+        android:layout_weight="8"
+        android:padding="10dp"
+        android:layout_marginTop="30dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/temperature"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            app:cardMaxElevation="10dp"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TEMPERATURE"
+                android:textSize="30dp"
+                android:layout_gravity="center"
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="bold">
+
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </GridLayout>
+
+
+
+
+</LinearLayout>
