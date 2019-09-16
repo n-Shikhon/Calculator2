@@ -28,7 +28,7 @@ public class temperature extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 double length = Double.parseDouble(enterlen.getText().toString());
-                result00 = (length /1000);
+                result00 = (length /100);
                 result.setText(String.valueOf(result00));
             }
         });
