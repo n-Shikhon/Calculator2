@@ -8,7 +8,7 @@ import android.view.View;
 
 public class weight extends AppCompatActivity {
 
-    private Button btnkTOg,btngTOk;
+    private Button btnp,btnk;
     private TextView resultW;
     private EditText enterWt;
     double result1;
@@ -18,12 +18,12 @@ public class weight extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weight);
 
-        btnkTOg = findViewById(R.id.btnkTOg);
-        btngTOk = findViewById(R.id.btngTOk);
+        btnp = findViewById(R.id.btnp);
+        btnk = findViewById(R.id.btnk);
         resultW  = findViewById(R.id.resultW);
         enterWt = findViewById(R.id.enterWt);
 
-        btnkTOg.setOnClickListener(new View.OnClickListener() {
+        btnp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 double weight = Double.parseDouble(enterWt.getText().toString());
@@ -32,7 +32,7 @@ public class weight extends AppCompatActivity {
             }
         });
 
-        btngTOk.setOnClickListener(new View.OnClickListener() {
+        btnk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 double weight = Double.parseDouble(enterWt.getText().toString());
