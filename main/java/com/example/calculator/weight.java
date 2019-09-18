@@ -27,7 +27,7 @@ public class weight extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 double weight = Double.parseDouble(enterWt.getText().toString());
-                result1 = (weight * 1000);
+                result1 = (weight * 2.2);
                 resultW.setText(String.valueOf(result1));
             }
         });
@@ -36,7 +36,7 @@ public class weight extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 double weight = Double.parseDouble(enterWt.getText().toString());
-                result1 = (weight / 1000);
+                result1 = (weight / 2.2);
                 resultW.setText(String.valueOf(result1));
             }
         });
